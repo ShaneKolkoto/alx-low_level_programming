@@ -1,21 +1,22 @@
 #include <stdio.h>
+
 /**
- *main - Display memory size of variables
+ * main  - Entry point
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char ch;
-    int in;
-    long lng;
-    long long lolng;
-    float flt;
+    int i;
+    char c;
+    long int li;
+    long long int lli;
+    float f;
 
-    printf("Size of a char: %lu byte(s)\n", sizeof(ch));
-    printf("Size of an int: %lu byte(s)\n", sizeof(in));
-    printf("Size of a long int: %lu byte(s)\n", sizeof(lng));
-    printf("Size of a long long int: %lu byte(s)\n", sizeof(lolng));
-    printf("Size of a float: %lu byte(s)\n", sizeof(flt));
+    printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+    printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+    printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(li));
+    printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(lli));
+    printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
     return (0);
 }
