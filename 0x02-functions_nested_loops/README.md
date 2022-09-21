@@ -12,7 +12,7 @@
 
 - **Note** for all these challenges we will not be using global variables and any standard library.
 - We will be using function prototypes that will be included in our header file called, [main.h](./main.h).
-- We are allowed to use the prototype funtion [\_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c).
+- We are allowed to use the prototype funtion [\_putchar](https://github.com/mainschool/_putchar.c/blob/master/_putchar.c).
 - All `*-main.c` files will be located in the [main](./main) directory
 
 ---
@@ -56,6 +56,7 @@
 <main+119>: leave
 <main+120>: ret
 ```
+
 - Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-putchar.c -o 0-putchar`
 
 </details>
