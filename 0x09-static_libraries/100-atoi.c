@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * atoi - function that converts a string
@@ -7,9 +7,8 @@
  * @s: string input pointer
  *
  * Return: 0 if there is no number
-*/
+ */
 
 int _atoi(char *s)
 {
-
 }
