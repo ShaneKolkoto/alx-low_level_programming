@@ -1,12 +1,14 @@
 /**
- * print_name - print a name.
- * @name: string to print.
- * @f: function pointer.
- * 
- * Return: void.
+ * print_name - function to print name
+ *
+ * @name: name to print
+ * @f: function pointer that doesn't return anything
+ *
+ * Return: Always 0 (Success)
  */
+
 void print_name(char *name, void (*f)(char *))
 {
 	if (name && f)
-			f(name);
+		f(name);
 }
