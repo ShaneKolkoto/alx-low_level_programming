@@ -1,21 +1,21 @@
-#include "function_pointers.h"
+#include <stddef.h>
+
 /**
- * array_iterator - executes a function given as a parameter on each element
- *                  of an array.
+ * array_iterator - a function that executes a given function
+ *                  as a parameter on each element of an array
  *
- * @array: printable elements
- * @size: printable elements number
- * @action: printable function
+ * @array: array to iterate
+ * @size: size of array
+ * @action: pointer to function to call
+ *
+ * Return: empty if @array and @action is NULL
  */
+
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned long cLoop;
+	unsigned int index;
 
-	if (!array || !action)
-		return;
-
-	for (cLoop = 0; cLoop < size; cLoop++)
-	{
-		action(array[cLoop]);
-	}
+	if (array != NULL && size > 0 && action != NULL)
+		for (index = 0; index < size; index++)
+			action(array[index]);
 }
